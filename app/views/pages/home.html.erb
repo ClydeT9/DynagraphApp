@@ -144,13 +144,21 @@ section.homeview {
 [data-overlay="2"]:before {
     opacity: 0.5;
 }
+span.feature img:first-child:not(:last-child) {
+    min-height: 191px!important;
+}
+@media screen and (max-width: 940px) {
+  a.feature img:first-child:not(:last-child) {
+    min-height: 51px!important;
+}
+}
 </style>
 
 <section class="text-center home">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-8">
-                        <h2>Bienvenue sur le site de <span class="dynagraph">Dynagraph</span></h2>
+                        <h1>Bienvenue sur le site de <span class="dynagraph">Dynagraph</span></h1>
                             
                         <%= image_tag "dynagraph-grand.png", class:"dynagraph-grand", width:300%>
                             <p class="lead">
@@ -275,37 +283,37 @@ section.homeview {
                             <h3>Nos réalisations</h3>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#">Voir plus</a>
+                            <a href="/index">Voir plus</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-6">
-                            <a href="#" class="feature">
-                                <img alt="Pic" src="">
-                                <h5 class="mb--0">Projet 1</h5>
+                            <span class="feature">
+                                <img alt="Pic" src="/assets/panneaux_10.jpg">
+                                <h5 class="mb--0">Projet 6</h5>
                                 <div>Lettrages véhicules</div>
-                            </a>
+                            </span>
                         </div>
                         <div class="col-md-3 col-6">
-                            <a href="#" class="feature">
-                                <img alt="Pic" src="">
+                            <span class="feature">
+                                <img alt="Pic" src="/assets/vehicule_10.jpg">
                                 <h5 class="mb--0">Projet 2</h5>
                                 <div>Sablage</div>
-                            </a>
+                            </span>
                         </div>
                         <div class="col-md-3 col-6">
-                            <a href="#" class="feature">
-                                <img alt="Pic" src="">
+                            <span class="feature">
+                                <img alt="Pic" src="/assets/event_8.jpg">
                                 <h5 class="mb--0">Projet 3</h5>
                                 <div>Panneaux et enseignes</div>
-                            </a>
+                            </span >
                         </div>
                         <div class="col-md-3 col-6">
-                            <a href="#" class="feature">
-                                <img alt="Pic" src="">
+                            <span class="feature">
+                                <img alt="Pic" src="/assets/panneaux_5.jpg">
                                 <h5 class="mb--0">Projet 4</h5>
                                 <div>Évènements & signalisations</div>
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,11 @@
+production:
+
+cloud_name: "dzxskstly"
+
+api_key: "254617258741573"
+
+api_secret: "Wu44R23BwTEnzy9kTnp3ReKUBgA"
+
+enhance_image_tag: true
+
+static_image_support: true

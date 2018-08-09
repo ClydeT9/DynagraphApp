@@ -1,28 +1,48 @@
 <style>
-.masonry__item.col-md-6.col-12.filter-design.contact,.masonry__item.col-lg-6.col-md-12.col-12.contact {
-    position: absolute;
-    left: 570px;
-    top: 368px;
+.masonry__item:not(:empty) article {
+    cursor: default;
+}
+article.imagebg .article__title span {
+    font-size: 18px;
+}
+.imagebg:not(.image--light) h4 {
+    font-size:14px;
+}
+.validate-required.validate-email {
+    margin-bottom:14px;
 }
 </style>
-
 <div class="main-container">
+<section class="text-center height-40">
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>Nos réalisations et évènements</h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
             <section class="space--sm">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="masonry masonry-blog-magazine">
+                            
                                 <div class="masonry__container row masonry--active" style="position: relative; height: 2238px;">
                                     <div class="masonry__item col-md-6" style="position: absolute; left: 0px; top: 0px;"></div>
                                     <div class="masonry__item col-md-12 col-12 h filter-marketing" data-masonry-filter="Marketing" style="position: absolute; left: 0px; top: 0px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <span class="label">New</span>
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-2.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-2.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/slide_4.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/slide_4.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>May 15th 2016</span>
-                                                    <h4>A day in the life of a professional fitness blogger</h4>
+                                                    <span>Projet 1</span>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                                                 </div>
                                             </article>
                                         </a>
@@ -31,26 +51,26 @@
                                     <div class="masonry__item col-md-6 col-12 filter-marketing" data-masonry-filter="Marketing" style="position: absolute; left: 0px; top: 368px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-3.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-3.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/vehicule_10.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/vehicule_10.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>May 12th 2016</span>
-                                                    <h4>Small businesses that expertly leverage their online followings</h4>
+                                                    <span>Projet 2</span>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                                                 </div>
                                             </article>
                                         </a>
                                     </div>
                                     <!--end item-->
-                                    <div class="masonry__item col-md-6 col-12 filter-design contact" data-masonry-filter="Design" style="position: absolute; left: 570px; top: 368px;">
+                                    <div class="masonry__item col-md-6 col-12 filter-design" data-masonry-filter="Design" style="position: absolute; left: 570px; top: 368px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-4.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-4.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/event_8.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/event_8.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>May 9th 2016</span>
-                                                    <h4>Designing efficiently in the age of distraction</h4>
+                                                    <span>Projet 3</span>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                                                 </div>
                                             </article>
                                         </a>
@@ -59,32 +79,31 @@
                                     <div class="masonry__item col-md-12 col-lg-6 col-12 filter-inspiration" data-masonry-filter="Inspiration" style="position: absolute; left: 0px; top: 736px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round height--tall" data-scrim-bottom="8">
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-5.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-5.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/panneaux_5.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/panneaux_5.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>May 5th 2016</span>
-                                                    <h4>Assembling an attractive workspace space to facilitate creativity</h4>
+                                                    <span>Projet 4</span>
+                                                    <h4>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h4>
                                                 </div>
                                             </article>
                                         </a>
                                     </div>
                                     <!--end item-->
-                                    <div class="masonry__item col-lg-6 col-md-12 col-12 contact" style="position: absolute; left: 570px; top: 736px;">
+                                    <div class="masonry__item col-lg-6 col-md-12 col-12" style="position: absolute; left: 570px; top: 736px;">
                                         <div class="boxed boxed--lg boxed--border bg--secondary text-center masonry__promo height--tall">
                                             <div class="pos-vertical-center">
-                                                <h3>Valuable business insight delivered direct to your inbox</h3>
-                                                <p>Join over 20,000 other designers</p>
+                                                <h3>Contactez-nous</h3>
                                                 <form action="http://mrare.us8.list-manage.com/subscribe/post-json?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8&amp;c=?" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your email address and agree to the terms." novalidate="true" class="form--active">
-                                                    <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address">
-                                                    <button type="submit" class="btn btn--primary type--uppercase">Subscribe</button>
+                                                    <input class="validate-required" type="text" name="EMAIL" placeholder="Nom">
+                                                    <input class="validate-required" type="text" name="EMAIL" placeholder="Téléphone">
+                                                    <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Adresse email">
+                                                    <textarea class="validate-required validate-email" row="5" placeholder="Message"></textarea>
+                                                    <button type="submit" class="btn btn--primary type--uppercase">Envoyer</button>
                                                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                                         <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value="">
                                                     </div>
                                                 </form>
-                                                <span class="type--fine-print">I have read and agreed to the
-                                                    <a href="#">Terms &amp; Conditions</a>
-                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -92,12 +111,12 @@
                                     <div class="masonry__item col-md-12 col-12 filter-design" data-masonry-filter="Design" style="position: absolute; left: 0px; top: 1502px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-1.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-1.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/slide_7.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/slide_7.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>May 3rd 2016</span>
-                                                    <h4>Stack designer Marc Ruben's trips for working as a remote team member</h4>
+                                                    <span>Projet 5</span>
+                                                    <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h4>
                                                 </div>
                                             </article>
                                         </a>
@@ -106,27 +125,26 @@
                                     <div class="masonry__item col-md-6 col-12 filter-marketing" data-masonry-filter="Marketing" style="position: absolute; left: 0px; top: 1870px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-6.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-6.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/panneaux_10.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/panneaux_10.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>April 28 2016</span>
-                                                    <h4>What will cutting down on email really do for your business</h4>
+                                                    <span>Projet 6</span>
+                                                    <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h4>
                                                 </div>
                                             </article>
                                         </a>
                                     </div>
                                     <!--end item-->
-                                    <div class="masonry__item col-md-6 col-12 filter-inspiration contact" data-masonry-filter="Inspiration" style="position: absolute; left: 570px; top: 1870px;">
+                                    <div class="masonry__item col-md-6 col-12 filter-inspiration" data-masonry-filter="Inspiration" style="position: absolute; left: 570px; top: 1870px;">
                                         <a class="block" href="#">
                                             <article class="imagebg border--round" data-scrim-bottom="8">
-                                                <span class="label">Hot</span>
-                                                <div class="background-image-holder" style="background: url(&quot;img/blog-7.jpg&quot;); opacity: 1;">
-                                                    <img alt="background" src="img/blog-7.jpg">
+                                                <div class="background-image-holder" style="background: url('/assets/panneaux_5.jpg'); opacity: 1;">
+                                                    <img alt="background" src="/assets/panneaux_5.jpg">
                                                 </div>
                                                 <div class="article__title">
-                                                    <span>April 27 2016</span>
-                                                    <h4>Our favourite things: Q1 2016 Edition</h4>
+                                                    <span>Projet 7</span>
+                                                    <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h4>
                                                 </div>
                                             </article>
                                         </a>
@@ -134,6 +152,7 @@
                                     <!--end item-->
                                 </div>
                                 <!--end masonry container-->
+                                
                             </div>
                             <!--end masonry-->
                         </div>
@@ -142,5 +161,4 @@
                 </div>
                 <!--end of container-->
             </section>
-
         </div>

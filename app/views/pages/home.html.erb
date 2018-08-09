@@ -152,6 +152,12 @@ span.feature img:first-child:not(:last-child) {
     min-height: 51px!important;
 }
 }
+
+.test2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 </style>
 
 <section class="text-center home">
@@ -176,8 +182,10 @@ span.feature img:first-child:not(:last-child) {
                         <div class="col-md-7 col-6">
                             <a href="/solutions/solutions#3" class="block">
                                 <div class="feature feature-7 boxed text-center imagebg" data-overlay="2">
-                                    <div class="background-image-holder" style="background: url('/assets/Yahama4.jpg'); opacity: 1;">
-                                        <img alt="background" src="/assets/Yahama4.jpg">
+                                    <div class="test2">
+                                    
+                                        <%= image_tag "Yahama4.jpg", class:"test"%>
+                                        
                                     </div>
                                     <h4 class="pos-vertical-center">Panneaux et Enseignes</h4>
                                 </div>

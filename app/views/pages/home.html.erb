@@ -1,0 +1,371 @@
+<style>
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.dynagraph {
+  text-decoration: underline #0088CE;
+}
+
+.text-center.home {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+img.dynagraph-grand {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.homeview {
+    padding-bottom: 50px!important;
+}
+
+.slick-initialized .slick-slide {
+    min-height: 60px;
+}
+
+.savoirfaire {
+    padding-bottom: 50px!important;
+}
+
+[data-overlay] *:not(.container):not(.background-image-holder) {
+    font-weight:bold;
+}
+[data-overlay="2"]:before {
+    opacity: 0.5;
+}
+</style>
+
+<section class="text-center home">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                        <h2>Bienvenue sur le site de <span class="dynagraph">Dynagraph</span></h2>
+                            
+                        <%= image_tag "dynagraph-grand.png", class:"dynagraph-grand", width:300%>
+                            <p class="lead">
+                                Avec vous, nous identifierons le thème graphique que vous souhaitez privilégier. Notre expérience nous permettra de vous proposer les moyens techniques correspondant le mieux à vos besoins.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+<section class="homeview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-6">
+                            <a href="/solutions/solutions#3" class="block">
+                                <div class="feature feature-7 boxed text-center imagebg" data-overlay="2">
+                                    <div class="background-image-holder" style="background: url('/assets/Yahama4.jpg'); opacity: 1;">
+                                        <img alt="background" src="/assets/Yahama4.jpg">
+                                    </div>
+                                    <h4 class="pos-vertical-center">Panneaux et Enseignes</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-6">
+                            <a href="/solutions/solutions#1" class="block">
+                                <div class="feature feature-7 boxed text-center imagebg" data-overlay="2">
+                                    <div class="background-image-holder" style="background: url('/assets/vehicule_10.jpg'); opacity: 1;">
+                                        <img alt="background" src="/assets/vehicule_10.jpg">
+                                    </div>
+                                    <h4 class="pos-vertical-center">Lettrage Véhicules</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-6">
+                            <a href="/solutions/solutions#4" class="block">
+                                <div class="feature feature-7 boxed text-center imagebg" data-overlay="2">
+                                    <div class="background-image-holder" style="background: url('/assets/panneaux_5.jpg'); opacity: 1;">
+                                        <img alt="background" src="/assets/panneaux_5.jpg">
+                                    </div>
+                                    <h4 class="pos-vertical-center">Bâches</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-6">
+                            <a href="/solutions/solutions#4" class="block">
+                                <div class="feature feature-7 boxed text-center imagebg" data-overlay="5">
+                                    <div class="background-image-holder" style="background: url('/assets/sablage_1.jpg'); opacity: 1;">
+                                        <img alt="background" src="/assets/sablage_1.jpg">
+                                    </div>
+                                    <h4 class="pos-vertical-center">Sablage</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <a href="/solutions/solutions#2" class="block">
+                                <div class="feature feature-7 boxed text-center imagebg" data-overlay="5">
+                                    <div class="background-image-holder" style="background: url('/assets/Yamaha1.jpg'); opacity: 1;">
+                                        <img alt="background" src="/assets/Yamaha1.jpg">
+                                    </div>
+                                    <h4 class="pos-vertical-center">Évènements & Signalisations</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+
+
+<section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Nos clients nous font confiance</h2>
+                            <p class="lead">
+                                Morbi leo risus, porta ac consectetur ac, vestibulum at eros.Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+                <div class="container">
+                  <div class="row">
+                        <div class="col-md-12">
+                          <section class="customer-logos slider">
+                                <div class="slide d-flex align-items-center"><%= image_tag "audi.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "theegg.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "pirelli.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "laurentperrier.jpeg" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "Sodexo.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "proximus.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "ING.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "toyota.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "shell.jpg" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "STIB.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "Lloydspharma.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "bollinger.jpg" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "coyote.jpg" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "d-sidelogo.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "optimade.png" %></div>
+                                <div class="slide d-flex align-items-center"><%= image_tag "felixandcom.jpg" %></div>
+                          </section>
+                        </div>
+                   </div>
+                </div>
+                <!--end of container-->
+
+<section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Nos réalisations</h3>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#">Voir plus</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-6">
+                            <a href="#" class="feature">
+                                <img alt="Pic" src="img/tourism-9.jpg">
+                                <h5 class="mb--0">Projet 1</h5>
+                                <div>Lettrages véhicules</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="#" class="feature">
+                                <img alt="Pic" src="img/tourism-8.jpg">
+                                <h5 class="mb--0">Projet 2</h5>
+                                <div>Sablage</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="#" class="feature">
+                                <img alt="Pic" src="img/tourism-7.jpg">
+                                <h5 class="mb--0">Projet 3</h5>
+                                <div>Panneaux et enseignes</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="#" class="feature">
+                                <img alt="Pic" src="img/tourism-6.jpg">
+                                <h5 class="mb--0">Projet 4</h5>
+                                <div>Évènements & signalisations</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+<section class="savoirfaire">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-6">
+                            <%= image_tag "recruitment-3.jpg",class:"border--round" %>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Une équipe dévoué et un savoir faire</h2>
+                                <p class="lead">
+                                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                                </p>
+                                <a href="/pages/about">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+<script>
+
+
+function createSlick(){  
+
+	$(".customer-logos").not('.slick-initialized').slick({
+    autoplay: true,
+    dots: false,
+    arrows:false,
+    pauseOnHover: false,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplaySpeed: 1500,
+    responsive: [{ 
+        breakpoint: 500,
+        settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        } 
+    }]
+});	
+
+}
+
+createSlick();
+
+//Now it will not throw error, even if called multiple times.
+$(window).on( 'resize', createSlick );
+</script>

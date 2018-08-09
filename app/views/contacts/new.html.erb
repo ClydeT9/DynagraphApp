@@ -1,0 +1,66 @@
+<section class="text-center height-50">
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                        <%= image_tag "dynagraph-grand.png", width:200%>
+                            <h1>Contactez-nous</h1>
+                            <p class="lead">
+                                N'hésitez pas à nous contacter pour toutes questions
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+            <section class=" bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-md-12 col-lg-12">
+                        <div class="col-md-5">
+                            <p class="lead">
+                                <%= link_to root_path do %><%= image_tag "dynagraph-logo.png", class:"logo-mini", height:25%><% end %> <span class="type--fade"><%= link_to 'Dynagraph', root_path,class:"dynagraph nav" %> | digital printing & lettering</span>
+                            </p>
+                            <p class="lead">
+                                Tel: +32 (0)2 730 06 70<br>
+                                Fax: +32 (0)2 730 06 72
+                            </p>
+                            <p class="lead">
+                                <strong>Adresse: </strong>2 avenue L.Mommaertslaan 1140, Brussels
+                            </p>
+                        </div>
+
+                            <div class="boxed boxed--border">
+                                <%= form_for @contact, :html => {:class => 'text-left form-email row mx-0' } do |f| %>
+                                    <div class="col-md-6">
+                                        <span>Nom:</span>
+                                        <%= f.text_field :name, :required => true, class:"validate-required" %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Adresse email:</span>
+                                        <%= f.email_field :email, :required => true, class:"validate-required validate-email" %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Téléphone:</span>
+                                        <input type="tel" name="phone" class="validate-required">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span>Message:</span>
+                                        <%= f.text_area :message, :as => :text, :required => false, :input_html => {:rows => 5},class:"validate-required" %>
+                                    </div>
+                                    <div class="hidden">
+                                        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+                                    </div>
+                                    <div class="col-md-12 boxed">
+                                        <%= f.button 'Envoyer', :class=> "btn btn--primary type--uppercase" %>
+                                    </div>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+                </section>

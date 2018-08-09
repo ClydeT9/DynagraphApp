@@ -1,0 +1,56 @@
+<style>
+a.dynagraph.nav {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    text-decoration:none!important;
+}
+.logo-mini {
+    margin-bottom:0.4em!important;
+    margin-right:0.2em;
+}
+ul.menu-horizontal {
+    position: relative!important;
+    top: 5px!important;
+}
+</style>
+<section class="bar bar-3 bar--sm bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="bar__module">
+                            <%= link_to root_path do %><%= image_tag "dynagraph-logo.png", class:"logo-mini", height:25%><% end %> <span class="type--fade"><%= link_to 'Dynagraph', root_path,class:"dynagraph nav" %> | digital printing & lettering</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-right text-left-xs text-left-sm">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal">
+                                <li>
+                                    <div class="modal-instance">
+                                        <a href="/pages/about" class="modal-trigger" data-modal-index="0">Qui sommes nous ?</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="modal-instance">
+                                        <a href="/solutions/solutions" class="modal-trigger" data-modal-index="1">Nos solutions</a>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="modal-instance">
+                                        <a href="#" class="modal-trigger" data-modal-index="2">Références et réalisations</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="modal-instance">
+                                        <%= link_to 'Contact', new_contact_path,class:"modal-trigger" %>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>

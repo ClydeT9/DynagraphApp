@@ -58,7 +58,10 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
-
+# Generate digests for assets URLs  
+config.assets.digest = true
+# Disable Rails's static asset server (Apache or nginx will already do this)  
+config.serve_static_assets = false
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "app_#{Rails.env}"

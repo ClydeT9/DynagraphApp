@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+    font-family: "DINMedium";
+    src: url(/assets/DINMedium.otf) format("truetype");
+  }
 
  .hidden { display: none; }
  section.bg--secondary:not(.imagebg) + section:not(.imagebg):not([class*='bg-']) {

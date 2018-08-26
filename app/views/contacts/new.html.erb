@@ -42,14 +42,14 @@
                         </div>
 
                             <div class="boxed boxed--border">
-                                <%= form_for @contact, :html => {:class => 'text-left form-email row mx-0' } do |f| %>
+                                <%= form_for @contact, class:"text-left form-email row mx-0" do |f| %>
                                     <div class="col-md-6">
                                         <span>Nom:</span>
-                                        <%= f.text_field :name, :required => true, class:"validate-required" %>
+                                        <%= f.text_field :name, required: true, class:"validate-required" %>
                                     </div>
                                     <div class="col-md-6">
                                         <span>Adresse email:</span>
-                                        <%= f.email_field :email, :required => true, class:"validate-required validate-email" %>
+                                        <%= f.email_field :email, required: true, class:"validate-required validate-email" %>
                                     </div>
                                     <div class="col-md-6">
                                         <span>Téléphone:</span>
@@ -57,13 +57,13 @@
                                     </div>
                                     <div class="col-md-12">
                                         <span>Message:</span>
-                                        <%= f.text_area :message, :as => :text, :required => false, :input_html => {:rows => 5},class:"validate-required" %>
+                                        <%= f.text_area :message, as: :text, rows:"5", class:"validate-required" %>
                                     </div>
                                     <div class="hidden">
-                                        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+                                        <%= f.text_field :nickname, hint: 'Leave this field blank!' %>
                                     </div>
                                     <div class="col-md-12 boxed">
-                                        <%= f.button 'Envoyer', :class=> "btn btn--primary type--uppercase" %>
+                                        <%= f.button 'Envoyer', class: "btn btn--primary type--uppercase" %>
                                     </div>
                                 <% end %>
                             </div>
